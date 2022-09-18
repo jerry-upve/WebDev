@@ -1,0 +1,192 @@
+:root {
+    --theme-c01: #582c83;
+    --theme-c02: #0057b7;
+    --theme-c03: #37de00;
+    --theme-c04: #fff200;
+    --theme-c05: #fe5000;
+    --theme-c06: #ffffff;
+    --theme-c07: #a5a5a5;
+    --theme-c08: #666666;
+    --theme-c09: #211e16;
+}
+
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textWhite {
+    color: var(--theme-c06);
+}
+
+.navbar {
+    position: sticky;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: var(--theme-c01);
+    box-shadow: 0 1px 3px 0px #00000057;
+}
+
+.imgNav {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 8%;
+}
+
+.imgNav > img {
+    width: 70%;
+}
+
+.navLinks {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.navLinks > a {
+    color: var(--theme-c06);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navLinks > a:hover {
+    color: var(--theme-c07);
+}
+
+.navLinks > .active {
+    color: var(--theme-c07);
+}
+
+.articleConteiner  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.articleConteiner > span {
+    font-size: 10vw;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fondoArt1 {
+    background: url('./assets/fondo-1.jpg');
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fondoArt2 { 
+    background: url('./assets/fondo-2.jpg'); 
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondoArt3 { 
+    background: url('./assets/fondo-3.jpg'); 
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondoArt4 { 
+    background: url('./assets/fondo-4.jpg'); 
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondoArt5 { 
+    background: url('./assets/fondo-5.jpg'); 
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondoArt6 { 
+    background: url('./assets/fondo-6.jpg'); 
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textImageBackground {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textGradiant {
+    background: linear-gradient( to right, var(--theme-c02), var(--theme-c08));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.textTrasparent > span {
+    padding: 20px;
+    background: white;
+    color: black;
+    mix-blend-mode: screen;
+}
+
+.rotateText {
+    animation-name: giro;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.scaleText {
+    animation-name: scale;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.colorChangeText {
+    animation-name: color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes giro {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes scale {
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+@keyframes color {
+    0%    { box-shadow: 0 0 20px 8px #007bff; }
+    20%   { box-shadow: 0 0 20px 8px #ff0000; }
+    40%   { box-shadow: 0 0 20px 8px #1aff00; }
+    60%   { box-shadow: 0 0 20px 8px #ff00e6; }
+    80%   { box-shadow: 0 0 20px 8px #ffe600; }
+    100%  { box-shadow: 0 0 20px 8px #00fffb; }
+}
+
